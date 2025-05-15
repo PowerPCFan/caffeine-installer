@@ -1,5 +1,3 @@
 venv/
 build/
 dist/
-caffeine_installer.spec
-test.py
