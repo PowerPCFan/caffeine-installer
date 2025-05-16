@@ -1,16 +1,16 @@
-import requests
-import zipfile
-import sys
-import os
 import ctypes
-import shutil as sh
+import os
 # import pythoncom
-# from win32comext.shell import shell, shellcon
-# from win32com.shell import shell, shellcon
-from win32com.client import Dispatch
+import requests
+import sys
+import shutil as sh
+import zipfile
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout, QCheckBox, QMessageBox, QGroupBox, QProgressBar
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
+from win32com.client import Dispatch
+# from win32comext.shell import shell, shellcon
+# from win32com.shell import shell, shellcon
 
 # Fallback just in case someone runs the .py file directly or if the .exe fails to elevate itself using uac_admin=True
 def is_admin():
@@ -108,7 +108,7 @@ class InstallerApp(QWidget):
         self.checkbox_64bit = QCheckBox("Install 64-bit version")
         self.checkbox_startmenu = QCheckBox("Add Start Menu shortcut")
         self.checkbox_desktop = QCheckBox("Add Desktop shortcut")
-        
+                
         # make some options checked by default
         self.checkbox_64bit.setChecked(True)
         self.checkbox_startmenu.setChecked(True)
