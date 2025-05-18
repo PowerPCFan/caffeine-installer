@@ -22,7 +22,7 @@ exe = EXE( # type: ignore
     a.binaries,
     a.datas,
     [],
-    name='Caffeine Installer',
+    name='CaffeineInstaller',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
